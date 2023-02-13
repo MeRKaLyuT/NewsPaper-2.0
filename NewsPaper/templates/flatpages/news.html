@@ -1,39 +1,42 @@
 {% extends 'flatpages/default.html' %}
 
-<!-- Название у нас будет products -->
+{% load custom_filters %}
+
+
+
 {% block title %}
 News
 {% endblock title %}
 
-<!-- В контенте на странице мы выводим все товары -->
+
 {% block content %}
 <h1 style="margin-left: 600px">Все новости({{ news|length }})</h1>
     <h3 style="font-size:20px">{{ time_now|date:'M d Y' }}</h3>
+
     <h3> {{ next_news|default_if_none:"Новые новости появляются каждый день!" }}</h3>
     <hr>
     {% if news %}
-       <table> <!-- Начинаем описывать таблицу -->
-           <tr> <!-- Добавляем строку -->
+       <table>
+           <tr>
                <td>Название</td>
                <td>Описание</td>
                <td>Категория</td>
                <td>Дата</td>
                <td>Рейтинг</td>
-           </tr> <!-- Не забываем закрыть HTML-тег строки -->
+           </tr>
 
            {% for new in news %}
            <tr>
-               <td>{{ new.title|truncatewords:20 }}</td>
-               <td>{{ new.text }}</td>
+               <td>{{ new.title|truncatewords:20|matrix }}</td>
+               <td>{{ new.text|matrix }}</td>
                <td>{{ new.category_type }}</td>
                <td>{{ new.data }}</td>
-               <td>{{ new.rank_of_news }}</td>
+               <td>{{ new.rank_of_news|currency:"ball" }}</td>
            </tr>
            {% endfor %}
 
-       </table> <!-- ... и таблицы -->
+       </table>
    {% else %}
-       <!-- Если товаров нет, говорим, что товаров нет ;) -->
        <h2>Новостей нет!</h2>
    {% endif %}
 {% endblock content %}

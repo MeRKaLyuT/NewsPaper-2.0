@@ -1,12 +1,30 @@
 {% extends 'flatpages/default.html' %}
 
+{% load custom_filters %}
+
 {% block title %}
 Article
 {% endblock title %}
 
-<!-- В контенте на странице мы выводим сам товар, идентификатор которого был передан в url -->
+
 {% block content %}
 <h4>{{ article.data|date:'M d Y' }}</h4>
-<h1>{{ article }}</h1>
+    <table>
+        <tr>
+            <td>{{ article.title|truncatewords:20|matrix }}</td>
+        </tr>
+        <tr>
+            <td>{{ article.text|matrix }}</td>
+        </tr>
+        <tr>
+            <td>{{ article.category_type }}</td>
+        </tr>
+        <tr>
+            <td>{{ article.data }}</td>
+        </tr>
+        <tr>
+            <td>{{ article.rank_of_news|currency:"like" }}</td>
+        </tr>
+    </table>
 
 {% endblock content %}
