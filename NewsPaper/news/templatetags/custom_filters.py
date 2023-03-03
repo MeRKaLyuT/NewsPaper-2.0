@@ -32,7 +32,7 @@ def currency(message: str):
             if string2 not in j:
                 flag += 1
             elif string2 == j:
-                filtred_message += string[:1] + pattern * (len(string)-1)
+                filtred_message += string[:1] + pattern * (len(string) - 1)
                 flag -= 1
                 string = ''
 

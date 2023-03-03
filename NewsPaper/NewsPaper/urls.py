@@ -15,11 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from news.views import NewsList, NewsDetail, NewsCreate, NewsUpdate, NewsDelete
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pages/', include('django.contrib.flatpages.urls')),
-    path('news/', include('news.urls')),
+    path('', include('news.urls')),
+    path('news/<int:pk>', NewsDetail.as_view(), name='news_detail'),
+    path('news/create/', NewsCreate.as_view(), name='news_create'),
+    path('news/<int:pk>/update/', NewsUpdate.as_view(), name='post_update'),
+    path('news/<int:pk>/delete/', NewsDelete.as_view(), name='post_delete'),
 ]
 # News
 # password only numbers

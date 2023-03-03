@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'flatpages/default.html' %}
+
+
+{% block content %}
+<h1>Search post</h1>
+<form action="" method="get">
+    {{ filterset.form.as_p }}
+
+    <input type="submit" value="Найти" />
+</form>
+{% endblock content %}
+

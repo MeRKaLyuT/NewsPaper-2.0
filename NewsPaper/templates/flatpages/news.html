@@ -2,6 +2,7 @@
 
 {% load custom_filters %}
 
+{% load custom_tags %}
 
 
 {% block title %}
@@ -12,6 +13,12 @@ News
 {% block content %}
 <h1 style="margin-left: 600px">Все новости({{ news|length }})</h1>
     <h3 style="font-size:20px">{{ time_now|date:'M d Y' }}</h3>
+
+    <form action="" method="get">
+
+        {{ filterset.form.as_p }}
+        <input type="submit" value="Найти" />
+    </form>
 
     <h3> {{ next_news|default_if_none:"Новые новости появляются каждый день!" }}</h3>
     <hr>
@@ -31,7 +38,7 @@ News
                <td>{{ new.text|matrix }}</td>
                <td>{{ new.category_type }}</td>
                <td>{{ new.data }}</td>
-               <td>{{ new.rank_of_news|currency:"ball" }}</td>
+               <td>{{ new.rank_of_news|currency:"like" }}</td>
            </tr>
            {% endfor %}
 
@@ -39,5 +46,24 @@ News
    {% else %}
        <h2>Новостей нет!</h2>
    {% endif %}
+
+      {% if page_obj.has_previous %}
+       <a href="?{% url_replace page=1 %}">1</a>
+       {% if page_obj.previous_page_number != 1 %}
+           ...
+           <a href="?{% url_replace page=page_obj.previous_page_number %}">{{ page_obj.previous_page_number }}</a>
+       {% endif %}
+   {% endif %}
+
+   {{ page_obj.number }}
+
+   {% if page_obj.has_next %}
+       <a href="?{% url_replace page=page_obj.next_page_number %}">{{ page_obj.next_page_number }}</a>
+       {% if paginator.num_pages != page_obj.next_page_number %}
+           ...
+           <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
+       {% endif %}
+   {% endif %}
+
 {% endblock content %}
 

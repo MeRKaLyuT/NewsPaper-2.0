@@ -1,1 +1,11 @@
-{% exten}
+{% extends 'flatpages/default.html' %}
+
+{% block content %}
+<h1>Новость</h1>
+<hr>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" values="Save" />
+</form>
+{% endblock content %}
