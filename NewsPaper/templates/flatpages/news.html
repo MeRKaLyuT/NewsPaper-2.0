@@ -23,6 +23,7 @@ News
     <h3> {{ next_news|default_if_none:"Новые новости появляются каждый день!" }}</h3>
     <hr>
     {% if news %}
+
        <table>
            <tr>
                <td>Название</td>
@@ -39,8 +40,26 @@ News
                <td>{{ new.category_type }}</td>
                <td>{{ new.data }}</td>
                <td>{{ new.rank_of_news|currency:"like" }}</td>
+               <td>
+
+               {% if perms.news.change_post %}
+                   <a href="{% url 'news_update' new.id %}" >Изменить</a>
+               {% endif %}
+
+               {% if perms.news.delete_post %}
+                   <a href="{% url 'news_delete' new.id %}" >Удалить</a>
+               {% endif %}
+               </td>
+
            </tr>
            {% endfor %}
+
+
+               {% if perms.news.delete_post %}
+
+            <a href="{% url 'news_create' %}" >Опубликовать новость или статью</a>
+
+           {% endif %}
 
        </table>
    {% else %}

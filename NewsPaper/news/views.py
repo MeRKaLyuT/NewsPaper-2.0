@@ -6,6 +6,7 @@ from django.views.generic import (
     ListView, DetailView, CreateView, UpdateView, DeleteView
 )
 from .forms import PostForm
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 
 
 class NewsList(ListView):
@@ -14,7 +15,7 @@ class NewsList(ListView):
     template_name = 'flatpages/news.html'
     context_object_name = 'news'
     paginate_by = 10
-    
+
 
 
     def get_queryset(self):
@@ -36,19 +37,22 @@ class NewsDetail(DetailView):
     context_object_name = 'article'
 
 
-class NewsCreate(CreateView):
+class NewsCreate(PermissionRequiredMixin, CreateView):
+    permission_required = ('news.add_post',)
     form_class = PostForm
     model = Post
     template_name = 'flatpages/post_edit.html'
 
 
-class NewsUpdate(UpdateView):
+class NewsUpdate(PermissionRequiredMixin, UpdateView):
+    permission_required = ('news.change_post',)
     form_class = PostForm
     model = Post
     template_name = 'flatpages/post_edit.html'
 
 
-class NewsDelete(DeleteView):
+class NewsDelete(PermissionRequiredMixin, DeleteView):
+    permission_required = ('news.delete_post',)
     model = Post
     template_name = 'flatpages/post_delete.html'
     success_url = reverse_lazy('news_list')

@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
+
 """
 import os
 from pathlib import Path
@@ -41,6 +42,12 @@ INSTALLED_APPS = [
     'django.contrib.flatpages',
     'news',
     'django_filters',
+    # подключение авторизации через другие сайты
+    # обязательно django.contrib.sites/messages/auth
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.yandex',
 ]
 
 MIDDLEWARE = [
@@ -55,6 +62,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'NewsPaper.urls'
+LOGIN_REDIRECT_URL = '/news'
+# чтобы allauth распознал форму как ту, что должна выполняться вместо формы по умолчанию, необходимо добавить это
+ACCOUNT_FORMS = {"signup": "accounts.forms.CustomSignUpForm"}
 
 TEMPLATES = [
     {
@@ -64,7 +74,9 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
+                # обязательная часть авторизации через другие приложения
                 'django.template.context_processors.request',
+                # ------------------------------------------
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -78,6 +90,11 @@ SITE_ID = 1
 
 STATICFILES_DIRS = [
     BASE_DIR / "static"
+]
+# Тоже для авторизации через allauth
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
 # Database
@@ -131,3 +148,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Регистрация по email и паролю. D5.4
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
