@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.flatpages',
-    'news',
+    'news.apps.NewsConfig',
     'django_filters',
     # подключение авторизации через другие сайты
     # обязательно django.contrib.sites/messages/auth
@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.yandex',
+    # для периодичных задач | pip install django-apscheduler
+    'django_apscheduler',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +67,7 @@ ROOT_URLCONF = 'NewsPaper.urls'
 LOGIN_REDIRECT_URL = '/news'
 # чтобы allauth распознал форму как ту, что должна выполняться вместо формы по умолчанию, необходимо добавить это
 ACCOUNT_FORMS = {"signup": "accounts.forms.CustomSignUpForm"}
+
 
 TEMPLATES = [
     {
@@ -154,4 +157,38 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+# mandatory - без подтверждения не пустит. Optional - пропустит и без подтверждения
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+# после подтверждения почты сразу заходит в аккаунт
+ACCOUNT_CONFIRM_EMAIL_ON_GET = True
+# хранит дни, сколько доступно для активации почты
+# ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS
+
+# Отправка писем на почту
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_PORT = 2525
+EMAIL_HOST_USER = "kiparenko06@mail.ru"
+EMAIL_HOST_PASSWORD = "yUfsnGaWNK0vuxakDRbk"
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
+# yUfsnGaWNK0vuxakDRbk
+
+DEFAULT_FROM_EMAIL = "kiparenko06@mail.ru"
+
+
+# для отправки писем админам об авторизации пользователя
+SERVER_EMAIL = 'kiparenko06@mail.ru'
+ADMINS = (
+    ('Maxim', 'kiparenko06@mail.ru'),
+    ('Vlada', 'vlada-kalina@mail.ru')
+)
+MANAGERS = (
+    ('Maxim', 'kiparenko06@mail.ru'),
+    ('Vlada', 'vlada-kalina@mail.ru')
+)
+EMAIL_SUBJECT_PREFIX = ''
+SITE_URL = 'http://127.0.0.1:8000'
+
+

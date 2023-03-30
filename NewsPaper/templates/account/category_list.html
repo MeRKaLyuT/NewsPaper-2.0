@@ -1,3 +1,5 @@
+
+
 {% extends 'flatpages/default.html' %}
 
 {% load custom_filters %}
@@ -11,42 +13,40 @@ News
 
 
 {% block content %}
-<h1 style="margin-left: 600px">Все новости({{ news|length }})</h1>
-    <h3 style="font-size:20px">{{ time_now|date:'M d Y' }}</h3>
 
-    <form action="" method="get">
-
-        {{ filterset.form.as_p }}
-        <input type="submit" value="Найти" />
-    </form>
-
-    <h3> {{ next_news|default_if_none:"Новые новости появляются каждый день!" }}</h3>
+    {{ category }}
+    {% if is_not_subscriber %}
+    <p class="text-center"><a href ="{% url 'subscribe' category.id %}" class = 'btn btn-secondary btn-sm'>Подписаться</a></p>
     <hr>
-    {% if news %}
+
+    {% endif %}
+
+
+
+    {% if category_news_list %}
 
        <table>
            <tr>
                <td>Название</td>
                <td>Описание</td>
+               <td>Категория</td>
                <td>Дата</td>
                <td>Рейтинг</td>
            </tr>
 
-           {% for new in news %}
+           {% for new in category_news_list %}
            <tr>
                <td>{{ new.title|truncatewords:20|matrix }}</td>
                <td>{{ new.text|matrix }}</td>
-
 
                {% for nw in post.category.all %}
                     <td><a href="{% url 'category_list' category.id %}">{{ nw.category_type }}</a></td>
                {% endfor %}
 
-
                <td>{{ new.data }}</td>
                <td>{{ new.rank_of_news|currency:"like" }}</td>
-
                <td>
+
                {% if perms.news.change_post %}
                    <a href="{% url 'news_update' new.id %}" >Изменить</a>
                {% endif %}
@@ -90,4 +90,3 @@ News
    {% endif %}
 
 {% endblock content %}
-

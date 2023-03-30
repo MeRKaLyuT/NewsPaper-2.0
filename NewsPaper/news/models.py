@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import MinValueValidator
 from django.contrib.auth.models import User
 from django.db.models import Sum
 from django.urls import reverse
@@ -23,6 +24,7 @@ class Author(models.Model):
 
 class Category(models.Model):
     name_category = models.CharField(max_length=255, unique=True)
+    subscribers = models.ManyToManyField(User, through='Subscription')
 
     def __str__(self):
         return self.name_category.title()
@@ -37,6 +39,7 @@ class Post(models.Model):
         (article, 'Статья'),
         (news, "Новость")
     )
+
     category_type = models.CharField(max_length=2, choices=Choice)
     data = models.DateTimeField(auto_now_add=True)
     connect = models.ManyToManyField('Category', through='PostCategory')
@@ -81,5 +84,10 @@ class Comment(models.Model):
     def dislike(self):
         self.rank -= 1
         self.save()
+
+
+class Subscription(models.Model):
+    user = models.ForeignKey(to=User, on_delete=models.CASCADE, related_name='subscriptions')
+    category = models.ForeignKey(to='Category', on_delete=models.CASCADE, related_name='subscriptions')
 
 # Create your models here.

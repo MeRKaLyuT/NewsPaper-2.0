@@ -1,0 +1,10 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+Subscriptions
+{% endblock title %}
+
+{% block content %}
+    <h1 class="text-center">{{ message }} "{{ category }}"</h1>
+    <a href="{% url 'news_list' %}" style="margin-left: 660px">На главную страницу</a>
+{% endblock content %}
