@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+import redis
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -192,3 +193,9 @@ EMAIL_SUBJECT_PREFIX = ''
 SITE_URL = 'http://127.0.0.1:8000'
 
 
+CELERY_BROKER_URL = f'redis://default:eTjtcrIxBKPGnOwQ5Cp3iwkVFM6r4bGb@redis-14075.c55.eu-central-1-1.ec2.cloud.redislabs.com:14075'
+
+CELERY_RESULT_BACKEND = f'redis://default:eTjtcrIxBKPGnOwQ5Cp3iwkVFM6r4bGb@redis-14075.c55.eu-central-1-1.ec2.cloud.redislabs.com:14075'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
