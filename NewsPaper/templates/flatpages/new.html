@@ -1,6 +1,7 @@
 {% extends 'flatpages/default.html' %}
 
 {% load custom_filters %}
+{% load cache %}
 
 {% block title %}
 Article
@@ -26,5 +27,6 @@ Article
             <td>{{ article.rank_of_news|currency:"like" }}</td>
         </tr>
     </table>
+
 
 {% endblock content %}

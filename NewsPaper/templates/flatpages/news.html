@@ -1,7 +1,7 @@
 {% extends 'flatpages/default.html' %}
 
 {% load custom_filters %}
-
+{% load cache %}
 {% load custom_tags %}
 
 
@@ -11,14 +11,17 @@ News
 
 
 {% block content %}
+{% cache 6000 how_many_of_news %}
 <h1 style="margin-left: 600px">Все новости({{ news|length }})</h1>
+{% endcache %}
     <h3 style="font-size:20px">{{ time_now|date:'M d Y' }}</h3>
-
+{% cache 60 find_news %}
     <form action="" method="get">
 
         {{ filterset.form.as_p }}
         <input type="submit" value="Найти" />
     </form>
+{% endcache %}
 
     <h3> {{ next_news|default_if_none:"Новые новости появляются каждый день!" }}</h3>
     <hr>

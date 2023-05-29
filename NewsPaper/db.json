@@ -1,0 +1,4465 @@
+[
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "administration",
+    "permissions": [
+      [
+        "add_emailaddress",
+        "account",
+        "emailaddress"
+      ],
+      [
+        "change_emailaddress",
+        "account",
+        "emailaddress"
+      ],
+      [
+        "delete_emailaddress",
+        "account",
+        "emailaddress"
+      ],
+      [
+        "view_emailaddress",
+        "account",
+        "emailaddress"
+      ],
+      [
+        "add_emailconfirmation",
+        "account",
+        "emailconfirmation"
+      ],
+      [
+        "change_emailconfirmation",
+        "account",
+        "emailconfirmation"
+      ],
+      [
+        "delete_emailconfirmation",
+        "account",
+        "emailconfirmation"
+      ],
+      [
+        "view_emailconfirmation",
+        "account",
+        "emailconfirmation"
+      ],
+      [
+        "add_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "change_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "delete_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "view_logentry",
+        "admin",
+        "logentry"
+      ],
+      [
+        "add_group",
+        "auth",
+        "group"
+      ],
+      [
+        "change_group",
+        "auth",
+        "group"
+      ],
+      [
+        "delete_group",
+        "auth",
+        "group"
+      ],
+      [
+        "view_group",
+        "auth",
+        "group"
+      ],
+      [
+        "add_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "change_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "delete_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "view_permission",
+        "auth",
+        "permission"
+      ],
+      [
+        "add_user",
+        "auth",
+        "user"
+      ],
+      [
+        "change_user",
+        "auth",
+        "user"
+      ],
+      [
+        "delete_user",
+        "auth",
+        "user"
+      ],
+      [
+        "view_user",
+        "auth",
+        "user"
+      ],
+      [
+        "add_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "change_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "delete_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "view_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "add_flatpage",
+        "flatpages",
+        "flatpage"
+      ],
+      [
+        "change_flatpage",
+        "flatpages",
+        "flatpage"
+      ],
+      [
+        "delete_flatpage",
+        "flatpages",
+        "flatpage"
+      ],
+      [
+        "view_flatpage",
+        "flatpages",
+        "flatpage"
+      ],
+      [
+        "add_author",
+        "news",
+        "author"
+      ],
+      [
+        "change_author",
+        "news",
+        "author"
+      ],
+      [
+        "delete_author",
+        "news",
+        "author"
+      ],
+      [
+        "view_author",
+        "news",
+        "author"
+      ],
+      [
+        "add_category",
+        "news",
+        "category"
+      ],
+      [
+        "change_category",
+        "news",
+        "category"
+      ],
+      [
+        "delete_category",
+        "news",
+        "category"
+      ],
+      [
+        "view_category",
+        "news",
+        "category"
+      ],
+      [
+        "add_comment",
+        "news",
+        "comment"
+      ],
+      [
+        "change_comment",
+        "news",
+        "comment"
+      ],
+      [
+        "delete_comment",
+        "news",
+        "comment"
+      ],
+      [
+        "view_comment",
+        "news",
+        "comment"
+      ],
+      [
+        "add_post",
+        "news",
+        "post"
+      ],
+      [
+        "change_post",
+        "news",
+        "post"
+      ],
+      [
+        "delete_post",
+        "news",
+        "post"
+      ],
+      [
+        "view_post",
+        "news",
+        "post"
+      ],
+      [
+        "add_postcategory",
+        "news",
+        "postcategory"
+      ],
+      [
+        "change_postcategory",
+        "news",
+        "postcategory"
+      ],
+      [
+        "delete_postcategory",
+        "news",
+        "postcategory"
+      ],
+      [
+        "view_postcategory",
+        "news",
+        "postcategory"
+      ],
+      [
+        "add_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "change_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "delete_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "view_session",
+        "sessions",
+        "session"
+      ],
+      [
+        "add_site",
+        "sites",
+        "site"
+      ],
+      [
+        "change_site",
+        "sites",
+        "site"
+      ],
+      [
+        "delete_site",
+        "sites",
+        "site"
+      ],
+      [
+        "view_site",
+        "sites",
+        "site"
+      ],
+      [
+        "add_socialaccount",
+        "socialaccount",
+        "socialaccount"
+      ],
+      [
+        "change_socialaccount",
+        "socialaccount",
+        "socialaccount"
+      ],
+      [
+        "delete_socialaccount",
+        "socialaccount",
+        "socialaccount"
+      ],
+      [
+        "view_socialaccount",
+        "socialaccount",
+        "socialaccount"
+      ],
+      [
+        "add_socialapp",
+        "socialaccount",
+        "socialapp"
+      ],
+      [
+        "change_socialapp",
+        "socialaccount",
+        "socialapp"
+      ],
+      [
+        "delete_socialapp",
+        "socialaccount",
+        "socialapp"
+      ],
+      [
+        "view_socialapp",
+        "socialaccount",
+        "socialapp"
+      ],
+      [
+        "add_socialtoken",
+        "socialaccount",
+        "socialtoken"
+      ],
+      [
+        "change_socialtoken",
+        "socialaccount",
+        "socialtoken"
+      ],
+      [
+        "delete_socialtoken",
+        "socialaccount",
+        "socialtoken"
+      ],
+      [
+        "view_socialtoken",
+        "socialaccount",
+        "socialtoken"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "Common users",
+    "permissions": []
+  }
+},
+{
+  "model": "auth.group",
+  "fields": {
+    "name": "authors",
+    "permissions": [
+      [
+        "add_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "change_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "delete_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "view_contenttype",
+        "contenttypes",
+        "contenttype"
+      ],
+      [
+        "add_flatpage",
+        "flatpages",
+        "flatpage"
+      ],
+      [
+        "change_flatpage",
+        "flatpages",
+        "flatpage"
+      ],
+      [
+        "delete_flatpage",
+        "flatpages",
+        "flatpage"
+      ],
+      [
+        "view_flatpage",
+        "flatpages",
+        "flatpage"
+      ]
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "!BMkzZQMd6NpmpAwfBKnu6oRTHt3ucIw0WSAPxmjk",
+    "last_login": "2023-03-23T21:31:13.785Z",
+    "is_superuser": false,
+    "username": "Максим",
+    "first_name": "Максим",
+    "last_name": "Кипаренко",
+    "email": "MeRKaLyuT@yandex.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-08T10:43:14.261Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$lXswK46S4QeDs6OhmUDpNl$51Kze5nbVqzk8f5QQwUbGTPR6utt/9DVA09y4DTozag=",
+    "last_login": "2023-03-09T17:54:27Z",
+    "is_superuser": false,
+    "username": "pomidor",
+    "first_name": "",
+    "last_name": "",
+    "email": "pomidor@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-09T17:54:27Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$awtALflTq5ljk0r0Q10BME$+N+avlJRP3xz0poolUbUqnfhqN4XmnqkFUeKnlADQ0g=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "merkalyut8",
+    "first_name": "",
+    "last_name": "",
+    "email": "merkalyut8@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-14T21:03:52.201Z",
+    "groups": [
+      [
+        "Common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$ZL38ZahbF3bmPD5DfPWt27$zGlJqjEHWKtD+3GXzubT7cBRZjYvJ9LXAVSwfD0tMis=",
+    "last_login": "2023-04-12T21:32:12.361Z",
+    "is_superuser": false,
+    "username": "kiparenko06",
+    "first_name": "",
+    "last_name": "",
+    "email": "kiparenko06@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-23T21:25:42Z",
+    "groups": [
+      [
+        "administration"
+      ],
+      [
+        "Common users"
+      ],
+      [
+        "authors"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$X6g32ddLTXhr3DJpYckhNP$s14Gs1IR6GO56E7Mu7SSlA9h2SmxiKRP3xX99wuu3yw=",
+    "last_login": "2023-04-18T20:55:14.367Z",
+    "is_superuser": true,
+    "username": "News",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-03-25T17:16:49.356Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$390000$Mp6hraMmgzqzdlssZRq9TY$RVo+vVa8eV1YjT6IFSo9krDZ24HMeKRkedncPIVGheo=",
+    "last_login": "2023-03-26T09:29:16Z",
+    "is_superuser": false,
+    "username": "marinushka87",
+    "first_name": "",
+    "last_name": "",
+    "email": "marinushka87@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-26T09:25:17Z",
+    "groups": [
+      [
+        "administration"
+      ],
+      [
+        "Common users"
+      ]
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "9r096k40hx7fic5qwk4s1cki3ogdimim",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZO_5R0nMGa-1d4wBypDipEHeHSCmgfTPzXiLitta4dV7iROIsQJx-t4T5wW0HdMd2m2We27pMSe6KPGiX15n4eTncv4OKvX5rm8Ea7wA4kObkLBQcRo_Wg2JMUNxA2REqZzS7wLqgUtrYHEZKAbJ4fwDZETfV:1pRasa:H9ydefDaoj2wVA_ee1HCOUlf8DNoZFkAEo6OKDo4yYk",
+    "expire_date": "2023-02-27T15:36:32.727Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "dsa4rfdmlq9tranxdcbklck4e2dih62z",
+  "fields": {
+    "session_data": ".eJxVjcsOwiAQRf-FtWl4lFK70x8h02FIiQ01BRKN8d8F04Uu7-vcF7NQ8mJLot0GxyYmNTv9mjPgjWJLYF2b3QHiVmLuvp0jTt2lKoo5IOSwxeux-kMtkJbKIfR8dkgStIRBzkCKjPO958CRzmrUnkxt6N44IQXXRg1Cwch1L40w2KCJUqo3lh73sD_ZxN8fI5ZD_w:1pgMge:7Q6RAjZf9t5FLi0tctL6Te8YkYPlbr_d_NJZaDSXxKs",
+    "expire_date": "2023-04-09T09:29:16.727Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m1zw67wn6ikb46yia8bjkm21gbvgy986",
+  "fields": {
+    "session_data": ".eJxVjU0OwiAQhe_C2jRDCxS704uQAaaB2FBTaKIx3l0wXejy_X3vxQzuJZg902aiZxPr2enXs-hulFqAy9LsDp1b91S6b-eIc3epilKJDktc0_VY_aEC5lA5pKCuzhxnra3qHZegpFJyBg6C4wBI3grykrxHK0ZtNZcD-B6lG7XCBs2Uc70x9LjH7ckmeH8Ax3BDyQ:1paKg2:n2aGFY8S-f2ze-pDUgPMdLWmnaLquZG2PYblQFepDOw",
+    "expire_date": "2023-03-23T18:07:42.481Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "n5g3sygd64787hyb6noqjfj6dt0ynh5r",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllZO_5R0nMGa-1d4wBypDipEHeHSCmgfTPzXiLitta4dV7iROIsQJx-t4T5wW0HdMd2m2We27pMSe6KPGiX15n4eTncv4OKvX5rm8Ea7wA4kObkLBQcRo_Wg2JMUNxA2REqZzS7wLqgUtrYHEZKAbJ4fwDZETfV:1pPolc:bjx_2hsfz3nGqA_64RaEn1iwwoXDiVT588KxooeaHq0",
+    "expire_date": "2023-02-22T18:02:00.377Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x2fxoqik1yvruolvin0yxse50ebf476n",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-xc5S0nMGa71r4wBypDipEHeHSCmgfTPzXiLitta49bzEicVZGCdOv2NCeuS2E75ju82S5rYuU5K7Ig_a5XXm_Lwc7t9BxV6_NYIjbz0GGxyEEoaQQTnHZaARvVFp9Ag2oWHjQaEnrTVbC6SJcygg3h_wZje3:1posM6:mk745qiDyVHhuxFhcXMzP973pmpShE9cv74u4em-GdE",
+    "expire_date": "2023-05-02T20:55:14.371Z"
+  }
+},
+{
+  "model": "sites.site",
+  "fields": {
+    "domain": "127.0.0.1",
+    "name": "example.com"
+  }
+},
+{
+  "model": "news.author",
+  "pk": 2,
+  "fields": {
+    "userr": [
+      "Максим"
+    ],
+    "rank_author": 999
+  }
+},
+{
+  "model": "news.category",
+  "pk": 1,
+  "fields": {
+    "name_category": "Политика"
+  }
+},
+{
+  "model": "news.category",
+  "pk": 2,
+  "fields": {
+    "name_category": "Спорт"
+  }
+},
+{
+  "model": "news.category",
+  "pk": 3,
+  "fields": {
+    "name_category": "Финансы"
+  }
+},
+{
+  "model": "news.category",
+  "pk": 4,
+  "fields": {
+    "name_category": "Музыка"
+  }
+},
+{
+  "model": "news.post",
+  "pk": 23,
+  "fields": {
+    "author": 2,
+    "category_type": "NW",
+    "data": "2023-03-25T19:12:28.037Z",
+    "title": "Путин ушел с поста",
+    "text": "Случилось невероятное событие. Никто уже и не ждал этого, но это свершилось. Путин ушел с поста! Ура! Ура! Ура!",
+    "rank_of_news": 99999
+  }
+},
+{
+  "model": "news.post",
+  "pk": 24,
+  "fields": {
+    "author": 2,
+    "category_type": "",
+    "data": "2023-03-26T09:31:07.023Z",
+    "title": "Сделка на три миллиона",
+    "text": "Произошла сегодня в 2 часа дня",
+    "rank_of_news": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 28,
+  "fields": {
+    "author": 2,
+    "category_type": "",
+    "data": "2023-03-26T18:00:07.070Z",
+    "title": "Музыка",
+    "text": "Музыка МузыкаМузыка МузыкаМузыка МузыкаМузыка МузыкаМузыка МузыкаМузыка МузыкаМузыка Музыка",
+    "rank_of_news": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 29,
+  "fields": {
+    "author": 2,
+    "category_type": "",
+    "data": "2023-03-27T17:52:33.991Z",
+    "title": "ППШ",
+    "text": "Писталет пулимьот супир дупир крутой",
+    "rank_of_news": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 48,
+  "fields": {
+    "author": 2,
+    "category_type": "",
+    "data": "2023-04-12T21:33:49.964Z",
+    "title": "w3y5ew3uhew3",
+    "text": "t45y6tujkijyy5t4w5e6yru7i89youol8yi76uy5",
+    "rank_of_news": 0
+  }
+},
+{
+  "model": "news.post",
+  "pk": 49,
+  "fields": {
+    "author": 2,
+    "category_type": "",
+    "data": "2023-04-12T21:44:43.557Z",
+    "title": "wdefrgthyjuki,l.",
+    "text": "defwrsgtdhyjguhkilo;pkjlihukgjyhftgdrefswd",
+    "rank_of_news": 0
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 7,
+  "fields": {
+    "connect_to_post": 23,
+    "connect_to_category": 2
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 9,
+  "fields": {
+    "connect_to_post": 24,
+    "connect_to_category": 3
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 12,
+  "fields": {
+    "connect_to_post": 28,
+    "connect_to_category": 4
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 13,
+  "fields": {
+    "connect_to_post": 29,
+    "connect_to_category": 3
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 29,
+  "fields": {
+    "connect_to_post": 48,
+    "connect_to_category": 3
+  }
+},
+{
+  "model": "news.postcategory",
+  "pk": 30,
+  "fields": {
+    "connect_to_post": 49,
+    "connect_to_category": 3
+  }
+},
+{
+  "model": "news.subscription",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "Максим"
+    ],
+    "category": 1
+  }
+},
+{
+  "model": "news.subscription",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "News"
+    ],
+    "category": 3
+  }
+},
+{
+  "model": "news.subscription",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "kiparenko06"
+    ],
+    "category": 3
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "Максим"
+    ],
+    "email": "MeRKaLyuT@yandex.ru",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "pomidor"
+    ],
+    "email": "pomidor@mail.ru",
+    "verified": false,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 20,
+  "fields": {
+    "user": [
+      "merkalyut8"
+    ],
+    "email": "merkalyut8@mail.ru",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "kiparenko06"
+    ],
+    "email": "kiparenko06@mail.ru",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 23,
+  "fields": {
+    "user": [
+      "marinushka87"
+    ],
+    "email": "marinushka87@gmail.com",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "socialaccount.socialapp",
+  "pk": 1,
+  "fields": {
+    "provider": "yandex",
+    "name": "Yandex",
+    "client_id": "8360d8d0c31543a28b3e29f8605cba78",
+    "secret": "d0dc3428a866488d87b3ceb3ad8a13a8",
+    "key": "",
+    "sites": [
+      [
+        "127.0.0.1"
+      ]
+    ]
+  }
+},
+{
+  "model": "socialaccount.socialaccount",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "Максим"
+    ],
+    "provider": "yandex",
+    "uid": "1441822839",
+    "last_login": "2023-03-23T21:31:13.774Z",
+    "date_joined": "2023-03-08T10:43:14.268Z",
+    "extra_data": "{\"id\": \"1441822839\", \"login\": \"MeRKaLyuT\", \"client_id\": \"8360d8d0c31543a28b3e29f8605cba78\", \"display_name\": \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\", \"real_name\": \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c \\u041a\\u0438\\u043f\\u0430\\u0440\\u0435\\u043d\\u043a\\u043e\", \"first_name\": \"\\u041c\\u0430\\u043a\\u0441\\u0438\\u043c\", \"last_name\": \"\\u041a\\u0438\\u043f\\u0430\\u0440\\u0435\\u043d\\u043a\\u043e\", \"sex\": \"male\", \"default_email\": \"MeRKaLyuT@yandex.ru\", \"emails\": [\"MeRKaLyuT@yandex.ru\"], \"psuid\": \"1.AAk97A.kGP1ttw69LHxCPdJNh9hFA.u1z1VjhWnDFFmatu6fHOrw\"}"
+  }
+},
+{
+  "model": "django_apscheduler.djangojob",
+  "pk": "delete_old_job_executions",
+  "fields": {
+    "next_run_time": "2023-04-16T21:00:00Z",
+    "job_state": "gAWViwQAAAAAAAB9lCiMB3ZlcnNpb26USwGMAmlklIwZZGVsZXRlX29sZF9qb2JfZXhlY3V0aW9uc5SMBGZ1bmOUjEFuZXdzLm1hbmFnZW1lbnQuY29tbWFuZHMucnVuYXBzY2hlZHVsZXI6ZGVsZXRlX29sZF9qb2JfZXhlY3V0aW9uc5SMB3RyaWdnZXKUjBlhcHNjaGVkdWxlci50cmlnZ2Vycy5jcm9ulIwLQ3JvblRyaWdnZXKUk5QpgZR9lChoAUsCjAh0aW1lem9uZZSMG3B5dHpfZGVwcmVjYXRpb25fc2hpbS5faW1wbJSMCXdyYXBfem9uZZSTlIwIYnVpbHRpbnOUjAdnZXRhdHRylJOUjAh6b25laW5mb5SMCFpvbmVJbmZvlJOUjAlfdW5waWNrbGWUhpRSlIwNRXVyb3BlL01vc2Nvd5RLAYaUUpRoGYaUUpSMCnN0YXJ0X2RhdGWUTowIZW5kX2RhdGWUTowGZmllbGRzlF2UKIwgYXBzY2hlZHVsZXIudHJpZ2dlcnMuY3Jvbi5maWVsZHOUjAlCYXNlRmllbGSUk5QpgZR9lCiMBG5hbWWUjAR5ZWFylIwKaXNfZGVmYXVsdJSIjAtleHByZXNzaW9uc5RdlIwlYXBzY2hlZHVsZXIudHJpZ2dlcnMuY3Jvbi5leHByZXNzaW9uc5SMDUFsbEV4cHJlc3Npb26Uk5QpgZR9lIwEc3RlcJROc2JhdWJoIowKTW9udGhGaWVsZJSTlCmBlH2UKGgnjAVtb250aJRoKYhoKl2UaC4pgZR9lGgxTnNiYXViaCKMD0RheU9mTW9udGhGaWVsZJSTlCmBlH2UKGgnjANkYXmUaCmIaCpdlGguKYGUfZRoMU5zYmF1YmgijAlXZWVrRmllbGSUk5QpgZR9lChoJ4wEd2Vla5RoKYhoKl2UaC4pgZR9lGgxTnNiYXViaCKMDkRheU9mV2Vla0ZpZWxklJOUKYGUfZQoaCeMC2RheV9vZl93ZWVrlGgpiWgqXZRoLIwWV2Vla2RheVJhbmdlRXhwcmVzc2lvbpSTlCmBlH2UKGgxTowFZmlyc3SUSwCMBGxhc3SUSwB1YmF1YmgkKYGUfZQoaCeMBGhvdXKUaCmJaCpdlGgsjA9SYW5nZUV4cHJlc3Npb26Uk5QpgZR9lChoMU5oVEsAaFVLAHViYXViaCQpgZR9lChoJ4wGbWludXRllGgpiWgqXZRoWymBlH2UKGgxTmhUSwBoVUsAdWJhdWJoJCmBlH2UKGgnjAZzZWNvbmSUaCmIaCpdlGhbKYGUfZQoaDFOaFRLAGhVSwB1YmF1YmWMBmppdHRlcpROdWKMCGV4ZWN1dG9ylIwHZGVmYXVsdJSMBGFyZ3OUKYwGa3dhcmdzlH2UaCdoA4wSbWlzZmlyZV9ncmFjZV90aW1llEsBjAhjb2FsZXNjZZSIjA1tYXhfaW5zdGFuY2VzlEsBjA1uZXh0X3J1bl90aW1llIwIZGF0ZXRpbWWUjAhkYXRldGltZZSTlEMKB+cEEQAAAAAAAJRoHYaUUpR1Lg=="
+  }
+},
+{
+  "model": "django_apscheduler.djangojob",
+  "pk": "my_job",
+  "fields": {
+    "next_run_time": "2023-04-19T21:44:00Z",
+    "job_state": "gAWVZQQAAAAAAAB9lCiMB3ZlcnNpb26USwGMAmlklIwGbXlfam9ilIwEZnVuY5SMLm5ld3MubWFuYWdlbWVudC5jb21tYW5kcy5ydW5hcHNjaGVkdWxlcjpteV9qb2KUjAd0cmlnZ2VylIwZYXBzY2hlZHVsZXIudHJpZ2dlcnMuY3JvbpSMC0Nyb25UcmlnZ2VylJOUKYGUfZQoaAFLAowIdGltZXpvbmWUjBtweXR6X2RlcHJlY2F0aW9uX3NoaW0uX2ltcGyUjAl3cmFwX3pvbmWUk5SMCGJ1aWx0aW5zlIwHZ2V0YXR0cpSTlIwIem9uZWluZm+UjAhab25lSW5mb5STlIwJX3VucGlja2xllIaUUpSMDUV1cm9wZS9Nb3Njb3eUSwGGlFKUaBmGlFKUjApzdGFydF9kYXRllE6MCGVuZF9kYXRllE6MBmZpZWxkc5RdlCiMIGFwc2NoZWR1bGVyLnRyaWdnZXJzLmNyb24uZmllbGRzlIwJQmFzZUZpZWxklJOUKYGUfZQojARuYW1llIwEeWVhcpSMCmlzX2RlZmF1bHSUiIwLZXhwcmVzc2lvbnOUXZSMJWFwc2NoZWR1bGVyLnRyaWdnZXJzLmNyb24uZXhwcmVzc2lvbnOUjA1BbGxFeHByZXNzaW9ulJOUKYGUfZSMBHN0ZXCUTnNiYXViaCKMCk1vbnRoRmllbGSUk5QpgZR9lChoJ4wFbW9udGiUaCmIaCpdlGguKYGUfZRoMU5zYmF1YmgijA9EYXlPZk1vbnRoRmllbGSUk5QpgZR9lChoJ4wDZGF5lGgpiGgqXZRoLimBlH2UaDFOc2JhdWJoIowJV2Vla0ZpZWxklJOUKYGUfZQoaCeMBHdlZWuUaCmIaCpdlGguKYGUfZRoMU5zYmF1YmgijA5EYXlPZldlZWtGaWVsZJSTlCmBlH2UKGgnjAtkYXlfb2Zfd2Vla5RoKYloKl2UaCyMFldlZWtkYXlSYW5nZUV4cHJlc3Npb26Uk5QpgZR9lChoMU6MBWZpcnN0lEsDjARsYXN0lEsDdWJhdWJoJCmBlH2UKGgnjARob3VylGgpiWgqXZRoLIwPUmFuZ2VFeHByZXNzaW9ulJOUKYGUfZQoaDFOaFRLAGhVSwB1YmF1YmgkKYGUfZQoaCeMBm1pbnV0ZZRoKYloKl2UaFspgZR9lChoMU5oVEssaFVLLHViYXViaCQpgZR9lChoJ4wGc2Vjb25klGgpiGgqXZRoWymBlH2UKGgxTmhUSwBoVUsAdWJhdWJljAZqaXR0ZXKUTnVijAhleGVjdXRvcpSMB2RlZmF1bHSUjARhcmdzlCmMBmt3YXJnc5R9lGgnaAOMEm1pc2ZpcmVfZ3JhY2VfdGltZZRLAYwIY29hbGVzY2WUiIwNbWF4X2luc3RhbmNlc5RLAYwNbmV4dF9ydW5fdGltZZSMCGRhdGV0aW1llIwIZGF0ZXRpbWWUk5RDCgfnBBQALAAAAACUaB2GlFKUdS4="
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 1,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:24:10Z",
+    "duration": "32.52",
+    "finished": "1680110682.52",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 2,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:25:10Z",
+    "duration": "1.67",
+    "finished": "1680110711.67",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 3,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:26:10Z",
+    "duration": "4.16",
+    "finished": "1680110774.16",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 4,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:27:10Z",
+    "duration": "9.07",
+    "finished": "1680110839.07",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 5,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:28:10Z",
+    "duration": "2.85",
+    "finished": "1680110892.85",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 6,
+  "fields": {
+    "job": "my_job",
+    "status": "Missed!",
+    "run_time": "2023-03-29T17:29:10Z",
+    "duration": "1.62",
+    "finished": "1680110951.62",
+    "exception": "Run time of job 'my_job' was missed!",
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 7,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:30:10Z",
+    "duration": "1.72",
+    "finished": "1680111011.72",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 8,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:31:10Z",
+    "duration": "1.23",
+    "finished": "1680111071.23",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 9,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:32:10Z",
+    "duration": "2.98",
+    "finished": "1680111132.98",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 10,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:33:10Z",
+    "duration": "2.74",
+    "finished": "1680111192.74",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 11,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:34:10Z",
+    "duration": "1.21",
+    "finished": "1680111251.21",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 12,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:35:10Z",
+    "duration": "1.97",
+    "finished": "1680111311.97",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 13,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:36:10Z",
+    "duration": "1.41",
+    "finished": "1680111371.41",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 14,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:37:10Z",
+    "duration": "1.29",
+    "finished": "1680111431.29",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 15,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:38:10Z",
+    "duration": "1.34",
+    "finished": "1680111491.34",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 16,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:39:10Z",
+    "duration": "1.30",
+    "finished": "1680111551.30",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 17,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:40:10Z",
+    "duration": "1.34",
+    "finished": "1680111611.34",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 18,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:41:10Z",
+    "duration": "1.45",
+    "finished": "1680111671.45",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 19,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:42:10Z",
+    "duration": "1.52",
+    "finished": "1680111731.52",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 20,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:43:10Z",
+    "duration": "1.44",
+    "finished": "1680111791.44",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 21,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:44:10Z",
+    "duration": "1.21",
+    "finished": "1680111851.21",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 22,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:45:10Z",
+    "duration": "0.93",
+    "finished": "1680111910.93",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 23,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T17:49:10Z",
+    "duration": "4.46",
+    "finished": "1680112154.46",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 24,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:34:10Z",
+    "duration": "1.70",
+    "finished": "1680114851.70",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 25,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:35:10Z",
+    "duration": "0.68",
+    "finished": "1680114910.68",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 26,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:36:10Z",
+    "duration": "0.78",
+    "finished": "1680114970.78",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 27,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:37:10Z",
+    "duration": "1.70",
+    "finished": "1680115031.70",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 28,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:38:10Z",
+    "duration": "0.76",
+    "finished": "1680115090.76",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 29,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:39:10Z",
+    "duration": "0.76",
+    "finished": "1680115150.76",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 30,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:40:10Z",
+    "duration": "1.01",
+    "finished": "1680115211.01",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 31,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:41:10Z",
+    "duration": "1.99",
+    "finished": "1680115271.99",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 32,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:42:10Z",
+    "duration": "0.72",
+    "finished": "1680115330.72",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 33,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:43:10Z",
+    "duration": "0.77",
+    "finished": "1680115390.77",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 34,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:44:10Z",
+    "duration": "0.79",
+    "finished": "1680115450.79",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 35,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:45:10Z",
+    "duration": "0.73",
+    "finished": "1680115510.73",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 36,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:46:10Z",
+    "duration": "0.81",
+    "finished": "1680115570.81",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 37,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:47:10Z",
+    "duration": "0.86",
+    "finished": "1680115630.86",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 38,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:48:10Z",
+    "duration": "0.79",
+    "finished": "1680115690.79",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 39,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:49:10Z",
+    "duration": "0.68",
+    "finished": "1680115750.68",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 40,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:50:10Z",
+    "duration": "0.67",
+    "finished": "1680115810.67",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 41,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:51:10Z",
+    "duration": "0.80",
+    "finished": "1680115870.80",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 42,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:52:10Z",
+    "duration": "0.68",
+    "finished": "1680115930.68",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 43,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:53:10Z",
+    "duration": "0.84",
+    "finished": "1680115990.84",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 44,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:54:10Z",
+    "duration": "0.94",
+    "finished": "1680116050.94",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 45,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:55:10Z",
+    "duration": "0.70",
+    "finished": "1680116110.70",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 46,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:56:10Z",
+    "duration": "0.65",
+    "finished": "1680116170.65",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 47,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:57:10Z",
+    "duration": "0.77",
+    "finished": "1680116230.77",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 48,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:58:10Z",
+    "duration": "0.86",
+    "finished": "1680116290.86",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 49,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T18:59:10Z",
+    "duration": "0.71",
+    "finished": "1680116350.71",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 50,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:00:10Z",
+    "duration": "1.09",
+    "finished": "1680116411.09",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 51,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:01:10Z",
+    "duration": "0.74",
+    "finished": "1680116470.74",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 52,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:02:10Z",
+    "duration": "1.41",
+    "finished": "1680116531.41",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 53,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:03:10Z",
+    "duration": "0.73",
+    "finished": "1680116590.73",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 54,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:04:10Z",
+    "duration": "0.82",
+    "finished": "1680116650.82",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 55,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:05:10Z",
+    "duration": "2.02",
+    "finished": "1680116712.02",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 56,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:06:10Z",
+    "duration": "0.82",
+    "finished": "1680116770.82",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 57,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:07:10Z",
+    "duration": "1.01",
+    "finished": "1680116831.01",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 58,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:08:10Z",
+    "duration": "1.50",
+    "finished": "1680116891.50",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 59,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:09:10Z",
+    "duration": "0.66",
+    "finished": "1680116950.66",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 60,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:10:10Z",
+    "duration": "0.75",
+    "finished": "1680117010.75",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 61,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:11:10Z",
+    "duration": "0.69",
+    "finished": "1680117070.69",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 62,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:12:10Z",
+    "duration": "0.72",
+    "finished": "1680117130.72",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 63,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:13:10Z",
+    "duration": "0.60",
+    "finished": "1680117190.60",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 64,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:14:10Z",
+    "duration": "1.00",
+    "finished": "1680117251.00",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 65,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:15:10Z",
+    "duration": "1.10",
+    "finished": "1680117311.10",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 66,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:16:10Z",
+    "duration": "0.79",
+    "finished": "1680117370.79",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 67,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:17:10Z",
+    "duration": "0.80",
+    "finished": "1680117430.80",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 68,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:18:10Z",
+    "duration": "1.81",
+    "finished": "1680117491.81",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 69,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:19:10Z",
+    "duration": "0.76",
+    "finished": "1680117550.76",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 70,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:20:10Z",
+    "duration": "0.77",
+    "finished": "1680117610.77",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 71,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:21:10Z",
+    "duration": "0.70",
+    "finished": "1680117670.70",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 72,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:22:10Z",
+    "duration": "0.78",
+    "finished": "1680117730.78",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 73,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:23:10Z",
+    "duration": "0.88",
+    "finished": "1680117790.88",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 74,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:24:10Z",
+    "duration": "1.43",
+    "finished": "1680117851.43",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 75,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:25:10Z",
+    "duration": "1.01",
+    "finished": "1680117911.01",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 76,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:26:10Z",
+    "duration": "0.93",
+    "finished": "1680117970.93",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 77,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:27:10Z",
+    "duration": "0.92",
+    "finished": "1680118030.92",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 78,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:28:10Z",
+    "duration": "1.48",
+    "finished": "1680118091.48",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 79,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:29:10Z",
+    "duration": "1.37",
+    "finished": "1680118151.37",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 80,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:30:10Z",
+    "duration": "1.36",
+    "finished": "1680118211.36",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 81,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:31:10Z",
+    "duration": "1.48",
+    "finished": "1680118271.48",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 82,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:32:10Z",
+    "duration": "1.24",
+    "finished": "1680118331.24",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 83,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:33:10Z",
+    "duration": "1.29",
+    "finished": "1680118391.29",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 84,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:34:10Z",
+    "duration": "1.42",
+    "finished": "1680118451.42",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 85,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:35:10Z",
+    "duration": "1.30",
+    "finished": "1680118511.30",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 86,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:36:10Z",
+    "duration": "1.31",
+    "finished": "1680118571.31",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 87,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:37:10Z",
+    "duration": "1.11",
+    "finished": "1680118631.11",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 88,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:38:10Z",
+    "duration": "1.47",
+    "finished": "1680118691.47",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 89,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:39:10Z",
+    "duration": "1.40",
+    "finished": "1680118751.40",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 90,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:40:10Z",
+    "duration": "1.42",
+    "finished": "1680118811.42",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 91,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:41:10Z",
+    "duration": "1.31",
+    "finished": "1680118871.31",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 92,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:42:10Z",
+    "duration": "1.27",
+    "finished": "1680118931.27",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 93,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:43:10Z",
+    "duration": "1.20",
+    "finished": "1680118991.20",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 94,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:44:10Z",
+    "duration": "1.49",
+    "finished": "1680119051.49",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 95,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:45:10Z",
+    "duration": "1.37",
+    "finished": "1680119111.37",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 96,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:46:10Z",
+    "duration": "1.13",
+    "finished": "1680119171.13",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 97,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:47:10Z",
+    "duration": "1.30",
+    "finished": "1680119231.30",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 98,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:48:10Z",
+    "duration": "1.19",
+    "finished": "1680119291.19",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 99,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:49:10Z",
+    "duration": "1.29",
+    "finished": "1680119351.29",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 100,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:50:10Z",
+    "duration": "1.29",
+    "finished": "1680119411.29",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 101,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:51:10Z",
+    "duration": "1.34",
+    "finished": "1680119471.34",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 102,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:52:10Z",
+    "duration": "1.13",
+    "finished": "1680119531.13",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 103,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:53:10Z",
+    "duration": "1.37",
+    "finished": "1680119591.37",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 104,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:54:10Z",
+    "duration": "1.18",
+    "finished": "1680119651.18",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 105,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:55:10Z",
+    "duration": "1.28",
+    "finished": "1680119711.28",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 106,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:56:10Z",
+    "duration": "1.36",
+    "finished": "1680119771.36",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 107,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:57:10Z",
+    "duration": "1.46",
+    "finished": "1680119831.46",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 108,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:58:10Z",
+    "duration": "1.44",
+    "finished": "1680119891.44",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 109,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T19:59:10Z",
+    "duration": "1.45",
+    "finished": "1680119951.45",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 110,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:00:10Z",
+    "duration": "1.16",
+    "finished": "1680120011.16",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 111,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:01:10Z",
+    "duration": "1.19",
+    "finished": "1680120071.19",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 112,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:02:10Z",
+    "duration": "1.19",
+    "finished": "1680120131.19",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 113,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:03:10Z",
+    "duration": "1.05",
+    "finished": "1680120191.05",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 114,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:04:10Z",
+    "duration": "1.23",
+    "finished": "1680120251.23",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 115,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:05:10Z",
+    "duration": "1.12",
+    "finished": "1680120311.12",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 116,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:06:10Z",
+    "duration": "1.02",
+    "finished": "1680120371.02",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 117,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:07:10Z",
+    "duration": "1.30",
+    "finished": "1680120431.30",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 118,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:08:10Z",
+    "duration": "1.38",
+    "finished": "1680120491.38",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 119,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:09:10Z",
+    "duration": "0.92",
+    "finished": "1680120550.92",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 120,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:10:10Z",
+    "duration": "1.11",
+    "finished": "1680120611.11",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 121,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:11:10Z",
+    "duration": "2.33",
+    "finished": "1680120672.33",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 122,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:12:10Z",
+    "duration": "1.33",
+    "finished": "1680120731.33",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 123,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:13:10Z",
+    "duration": "1.35",
+    "finished": "1680120791.35",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 124,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:14:10Z",
+    "duration": "1.13",
+    "finished": "1680120851.13",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 125,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:15:10Z",
+    "duration": "1.22",
+    "finished": "1680120911.22",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 126,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:16:10Z",
+    "duration": "1.25",
+    "finished": "1680120971.25",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 127,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:17:10Z",
+    "duration": "1.27",
+    "finished": "1680121031.27",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 128,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:18:10Z",
+    "duration": "2.10",
+    "finished": "1680121092.10",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 129,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:19:10Z",
+    "duration": "2.28",
+    "finished": "1680121152.28",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 130,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:20:10Z",
+    "duration": "1.63",
+    "finished": "1680121211.63",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 131,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:21:10Z",
+    "duration": "1.04",
+    "finished": "1680121271.04",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 132,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:22:10Z",
+    "duration": "1.13",
+    "finished": "1680121331.13",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 133,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:23:10Z",
+    "duration": "3.00",
+    "finished": "1680121393.00",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 134,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:24:10Z",
+    "duration": "1.04",
+    "finished": "1680121451.04",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 135,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:25:10Z",
+    "duration": "1.04",
+    "finished": "1680121511.04",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 136,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:26:10Z",
+    "duration": "1.15",
+    "finished": "1680121571.15",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 137,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:27:10Z",
+    "duration": "1.11",
+    "finished": "1680121631.11",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 138,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:28:10Z",
+    "duration": "1.24",
+    "finished": "1680121691.24",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 139,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:29:10Z",
+    "duration": "1.14",
+    "finished": "1680121751.14",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 140,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:30:10Z",
+    "duration": "1.06",
+    "finished": "1680121811.06",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 141,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:31:10Z",
+    "duration": "1.32",
+    "finished": "1680121871.32",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 142,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:32:10Z",
+    "duration": "1.19",
+    "finished": "1680121931.19",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 143,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:33:10Z",
+    "duration": "1.05",
+    "finished": "1680121991.05",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 144,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:34:10Z",
+    "duration": "1.18",
+    "finished": "1680122051.18",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 145,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:35:10Z",
+    "duration": "1.28",
+    "finished": "1680122111.28",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 146,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:36:10Z",
+    "duration": "1.11",
+    "finished": "1680122171.11",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 147,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:37:10Z",
+    "duration": "1.17",
+    "finished": "1680122231.17",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 148,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:38:10Z",
+    "duration": "1.90",
+    "finished": "1680122291.90",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 149,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:39:10Z",
+    "duration": "1.32",
+    "finished": "1680122351.32",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 150,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:40:10Z",
+    "duration": "1.31",
+    "finished": "1680122411.31",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 151,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:41:10Z",
+    "duration": "1.50",
+    "finished": "1680122471.50",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 152,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:42:10Z",
+    "duration": "1.28",
+    "finished": "1680122531.28",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 153,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:43:10Z",
+    "duration": "1.09",
+    "finished": "1680122591.09",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 154,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:44:10Z",
+    "duration": "1.05",
+    "finished": "1680122651.05",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 155,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:45:10Z",
+    "duration": "1.32",
+    "finished": "1680122711.32",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 156,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:46:10Z",
+    "duration": "1.03",
+    "finished": "1680122771.03",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 157,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:47:10Z",
+    "duration": "1.21",
+    "finished": "1680122831.21",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 158,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:48:10Z",
+    "duration": "2.04",
+    "finished": "1680122892.04",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 159,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:49:10Z",
+    "duration": "1.29",
+    "finished": "1680122951.29",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 160,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:50:10Z",
+    "duration": "1.13",
+    "finished": "1680123011.13",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 161,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:51:10Z",
+    "duration": "2.13",
+    "finished": "1680123072.13",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 162,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:52:10Z",
+    "duration": "0.98",
+    "finished": "1680123130.98",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 163,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:53:10Z",
+    "duration": "1.11",
+    "finished": "1680123191.11",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 164,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:54:10Z",
+    "duration": "1.21",
+    "finished": "1680123251.21",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 165,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:55:10Z",
+    "duration": "2.84",
+    "finished": "1680123312.84",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 166,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:56:10Z",
+    "duration": "1.35",
+    "finished": "1680123371.35",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 167,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:57:10Z",
+    "duration": "1.20",
+    "finished": "1680123431.20",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 168,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:58:10Z",
+    "duration": "1.43",
+    "finished": "1680123491.43",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 169,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T20:59:10Z",
+    "duration": "2.42",
+    "finished": "1680123552.42",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 170,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T21:00:10Z",
+    "duration": "2.23",
+    "finished": "1680123612.23",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 171,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T21:01:10Z",
+    "duration": "1.69",
+    "finished": "1680123671.69",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 172,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T21:02:10Z",
+    "duration": "1.34",
+    "finished": "1680123731.34",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 173,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T21:03:10Z",
+    "duration": "1.55",
+    "finished": "1680123791.55",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 174,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T21:04:10Z",
+    "duration": "1.21",
+    "finished": "1680123851.21",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 175,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T21:05:10Z",
+    "duration": "1.51",
+    "finished": "1680123911.51",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 176,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T21:06:10Z",
+    "duration": "1.26",
+    "finished": "1680123971.26",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 177,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T21:07:10Z",
+    "duration": "1.25",
+    "finished": "1680124031.25",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 178,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-29T21:08:10Z",
+    "duration": "1.00",
+    "finished": "1680124091.00",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 179,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:10:10Z",
+    "duration": "2.04",
+    "finished": "1680199812.04",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 180,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:11:10Z",
+    "duration": "0.94",
+    "finished": "1680199870.94",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 181,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:12:10Z",
+    "duration": "0.77",
+    "finished": "1680199930.77",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 182,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:13:10Z",
+    "duration": "0.82",
+    "finished": "1680199990.82",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 183,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:14:10Z",
+    "duration": "0.67",
+    "finished": "1680200050.67",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 184,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:15:10Z",
+    "duration": "1.23",
+    "finished": "1680200111.23",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 185,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:16:10Z",
+    "duration": "0.71",
+    "finished": "1680200170.71",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 186,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:17:10Z",
+    "duration": "1.08",
+    "finished": "1680200231.08",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 187,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:18:10Z",
+    "duration": "0.71",
+    "finished": "1680200290.71",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 188,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:19:10Z",
+    "duration": "1.61",
+    "finished": "1680200351.61",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 189,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:20:10Z",
+    "duration": "1.68",
+    "finished": "1680200411.68",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 190,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:21:10Z",
+    "duration": "0.79",
+    "finished": "1680200470.79",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 191,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:22:10Z",
+    "duration": "0.83",
+    "finished": "1680200530.83",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 192,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:23:10Z",
+    "duration": "0.68",
+    "finished": "1680200590.68",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 193,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:24:10Z",
+    "duration": "0.85",
+    "finished": "1680200650.85",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 194,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:25:10Z",
+    "duration": "2.17",
+    "finished": "1680200712.17",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 195,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:26:10Z",
+    "duration": "0.78",
+    "finished": "1680200770.78",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 196,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:27:10Z",
+    "duration": "1.44",
+    "finished": "1680200831.44",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 197,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:28:10Z",
+    "duration": "1.75",
+    "finished": "1680200891.75",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 198,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:29:10Z",
+    "duration": "0.78",
+    "finished": "1680200950.78",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 199,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:30:10Z",
+    "duration": "1.27",
+    "finished": "1680201011.27",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 200,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:31:10Z",
+    "duration": "1.19",
+    "finished": "1680201071.19",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 201,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:32:10Z",
+    "duration": "0.65",
+    "finished": "1680201130.65",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 202,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:33:10Z",
+    "duration": "0.72",
+    "finished": "1680201190.72",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 203,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:34:10Z",
+    "duration": "0.67",
+    "finished": "1680201250.67",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 204,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:35:10Z",
+    "duration": "0.77",
+    "finished": "1680201310.77",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 205,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:36:10Z",
+    "duration": "0.81",
+    "finished": "1680201370.81",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 206,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:37:10Z",
+    "duration": "1.93",
+    "finished": "1680201431.93",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 207,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:38:10Z",
+    "duration": "2.05",
+    "finished": "1680201492.05",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 208,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:39:10Z",
+    "duration": "1.09",
+    "finished": "1680201551.09",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 209,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:40:10Z",
+    "duration": "0.87",
+    "finished": "1680201610.87",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 210,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T18:41:10Z",
+    "duration": "0.77",
+    "finished": "1680201670.77",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 211,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:43:10Z",
+    "duration": "0.03",
+    "finished": "1680201790.03",
+    "exception": "Cannot resolve keyword 'category' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    categories = set(post.values_list('category__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2142, in add_fields\n    join_info = self.setup_joins(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 212,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:44:10Z",
+    "duration": "0.02",
+    "finished": "1680201850.02",
+    "exception": "Cannot resolve keyword 'category' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    categories = set(post.values_list('category__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2142, in add_fields\n    join_info = self.setup_joins(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 213,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:46:10Z",
+    "duration": "0.02",
+    "finished": "1680201970.02",
+    "exception": "Cannot resolve keyword 'category' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 23, in my_job\n    categories = set(post.values_list('category__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2142, in add_fields\n    join_info = self.setup_joins(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 214,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:47:10Z",
+    "duration": "0.02",
+    "finished": "1680202030.02",
+    "exception": "Cannot resolve keyword 'category' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 23, in my_job\n    categories = set(post.values_list('category__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2142, in add_fields\n    join_info = self.setup_joins(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 215,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:49:10Z",
+    "duration": "0.03",
+    "finished": "1680202150.03",
+    "exception": "Cannot resolve keyword 'date' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    post = Post.objects.filter(date__gte=last_day)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\manager.py\", line 85, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1421, in filter\n    return self._filter_or_exclude(False, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1439, in _filter_or_exclude\n    clone._filter_or_exclude_inplace(negate, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1446, in _filter_or_exclude_inplace\n    self._query.add_q(Q(*args, **kwargs))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1532, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1562, in _add_q\n    child_clause, needed_inner = self.build_filter(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1407, in build_filter\n    lookups, parts, reffed_expression = self.solve_lookup_type(arg)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1217, in solve_lookup_type\n    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 216,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:50:10Z",
+    "duration": "0.03",
+    "finished": "1680202210.03",
+    "exception": "Cannot resolve keyword 'date' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    post = Post.objects.filter(data__gte=last_day)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\manager.py\", line 85, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1421, in filter\n    return self._filter_or_exclude(False, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1439, in _filter_or_exclude\n    clone._filter_or_exclude_inplace(negate, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1446, in _filter_or_exclude_inplace\n    self._query.add_q(Q(*args, **kwargs))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1532, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1562, in _add_q\n    child_clause, needed_inner = self.build_filter(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1407, in build_filter\n    lookups, parts, reffed_expression = self.solve_lookup_type(arg)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1217, in solve_lookup_type\n    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 217,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:51:10Z",
+    "duration": "0.04",
+    "finished": "1680202270.04",
+    "exception": "Cannot resolve keyword 'date' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    post = Post.objects.filter(data__gte=last_day)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\manager.py\", line 85, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1421, in filter\n    return self._filter_or_exclude(False, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1439, in _filter_or_exclude\n    clone._filter_or_exclude_inplace(negate, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1446, in _filter_or_exclude_inplace\n    self._query.add_q(Q(*args, **kwargs))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1532, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1562, in _add_q\n    child_clause, needed_inner = self.build_filter(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1407, in build_filter\n    lookups, parts, reffed_expression = self.solve_lookup_type(arg)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1217, in solve_lookup_type\n    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 218,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:52:10Z",
+    "duration": "0.02",
+    "finished": "1680202330.02",
+    "exception": "Cannot resolve keyword 'date' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    post = Post.objects.filter(data__gte=last_day)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\manager.py\", line 85, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1421, in filter\n    return self._filter_or_exclude(False, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1439, in _filter_or_exclude\n    clone._filter_or_exclude_inplace(negate, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1446, in _filter_or_exclude_inplace\n    self._query.add_q(Q(*args, **kwargs))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1532, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1562, in _add_q\n    child_clause, needed_inner = self.build_filter(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1407, in build_filter\n    lookups, parts, reffed_expression = self.solve_lookup_type(arg)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1217, in solve_lookup_type\n    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 219,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:53:10Z",
+    "duration": "0.02",
+    "finished": "1680202390.02",
+    "exception": "Cannot resolve keyword 'date' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    post = Post.objects.filter(data__gte=last_day)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\manager.py\", line 85, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1421, in filter\n    return self._filter_or_exclude(False, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1439, in _filter_or_exclude\n    clone._filter_or_exclude_inplace(negate, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1446, in _filter_or_exclude_inplace\n    self._query.add_q(Q(*args, **kwargs))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1532, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1562, in _add_q\n    child_clause, needed_inner = self.build_filter(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1407, in build_filter\n    lookups, parts, reffed_expression = self.solve_lookup_type(arg)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1217, in solve_lookup_type\n    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 220,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:54:10Z",
+    "duration": "0.02",
+    "finished": "1680202450.02",
+    "exception": "Cannot resolve keyword 'date' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    post = Post.objects.filter(data__gte=last_day)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\manager.py\", line 85, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1421, in filter\n    return self._filter_or_exclude(False, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1439, in _filter_or_exclude\n    clone._filter_or_exclude_inplace(negate, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1446, in _filter_or_exclude_inplace\n    self._query.add_q(Q(*args, **kwargs))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1532, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1562, in _add_q\n    child_clause, needed_inner = self.build_filter(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1407, in build_filter\n    lookups, parts, reffed_expression = self.solve_lookup_type(arg)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1217, in solve_lookup_type\n    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 221,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:55:10Z",
+    "duration": "0.02",
+    "finished": "1680202510.02",
+    "exception": "Cannot resolve keyword 'date' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    post = Post.objects.filter(data__gte=last_day)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\manager.py\", line 85, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1421, in filter\n    return self._filter_or_exclude(False, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1439, in _filter_or_exclude\n    clone._filter_or_exclude_inplace(negate, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1446, in _filter_or_exclude_inplace\n    self._query.add_q(Q(*args, **kwargs))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1532, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1562, in _add_q\n    child_clause, needed_inner = self.build_filter(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1407, in build_filter\n    lookups, parts, reffed_expression = self.solve_lookup_type(arg)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1217, in solve_lookup_type\n    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 222,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:56:10Z",
+    "duration": "0.02",
+    "finished": "1680202570.02",
+    "exception": "Cannot resolve keyword 'date' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 22, in my_job\n    post = Post.objects.filter(data__gte=last_day)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\manager.py\", line 85, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1421, in filter\n    return self._filter_or_exclude(False, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1439, in _filter_or_exclude\n    clone._filter_or_exclude_inplace(negate, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1446, in _filter_or_exclude_inplace\n    self._query.add_q(Q(*args, **kwargs))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1532, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1562, in _add_q\n    child_clause, needed_inner = self.build_filter(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1407, in build_filter\n    lookups, parts, reffed_expression = self.solve_lookup_type(arg)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1217, in solve_lookup_type\n    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 223,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:58:10Z",
+    "duration": "0.03",
+    "finished": "1680202690.03",
+    "exception": "Cannot resolve keyword 'category' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 23, in my_job\n    categories = set(post.values_list('category__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2142, in add_fields\n    join_info = self.setup_joins(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 224,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T18:59:10Z",
+    "duration": "0.02",
+    "finished": "1680202750.02",
+    "exception": "Cannot resolve keyword 'category' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 23, in my_job\n    categories = set(post.values_list('category__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2142, in add_fields\n    join_info = self.setup_joins(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 225,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T19:00:10Z",
+    "duration": "0.03",
+    "finished": "1680202810.03",
+    "exception": "Cannot resolve keyword 'category' into field. Choices are: author, author_id, category_type, comment, connect, data, id, postcategory, rank_of_news, text, title",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 23, in my_job\n    categories = set(post.values_list('category__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2142, in add_fields\n    join_info = self.setup_joins(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 226,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T19:02:10Z",
+    "duration": "0.02",
+    "finished": "1680202930.02",
+    "exception": "Cannot resolve keyword 'name' into field. Join on 'category_type' not permitted.",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 23, in my_job\n    categories = set(post.values_list('category_type__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2151, in add_fields\n    cols.append(join_info.transform_function(target, final_alias))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1835, in transform\n    raise last_field_exception\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1746, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 227,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T19:03:10Z",
+    "duration": "0.03",
+    "finished": "1680202990.03",
+    "exception": "Cannot resolve keyword 'name' into field. Join on 'category_type' not permitted.",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 23, in my_job\n    categories = set(post.values_list('category_type__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2151, in add_fields\n    cols.append(join_info.transform_function(target, final_alias))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1835, in transform\n    raise last_field_exception\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1746, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 228,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T19:05:10Z",
+    "duration": "0.03",
+    "finished": "1680203110.03",
+    "exception": "Cannot resolve keyword 'name' into field. Choices are: id, name_category, post, postcategory, subscribers, subscriptions",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 23, in my_job\n    categories = set(post.values_list('connect__name', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1330, in values_list\n    clone = self._values(*_fields, **expressions)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1293, in _values\n    clone.query.set_values(fields)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2437, in set_values\n    self.add_fields(field_names, True)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 2151, in add_fields\n    cols.append(join_info.transform_function(target, final_alias))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1835, in transform\n    raise last_field_exception\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1808, in setup_joins\n    path, final_field, targets, rest = self.names_to_path(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 229,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T19:07:10Z",
+    "duration": "0.03",
+    "finished": "1680203230.03",
+    "exception": "name 'Сategory' is not defined",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 24, in my_job\n    subscribers = set(Сategory.objects.filter(name__in=categories).values_list('subscribers__email', flat=True))\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 230,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T19:09:10Z",
+    "duration": "0.04",
+    "finished": "1680203350.04",
+    "exception": "Cannot resolve keyword 'name' into field. Choices are: id, name_category, post, postcategory, subscribers, subscriptions",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 24, in my_job\n    subscribers = set(Category.objects.filter(name__in=categories).values_list('subscribers__email', flat=True))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\manager.py\", line 85, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1421, in filter\n    return self._filter_or_exclude(False, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1439, in _filter_or_exclude\n    clone._filter_or_exclude_inplace(negate, args, kwargs)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\query.py\", line 1446, in _filter_or_exclude_inplace\n    self._query.add_q(Q(*args, **kwargs))\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1532, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1562, in _add_q\n    child_clause, needed_inner = self.build_filter(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1407, in build_filter\n    lookups, parts, reffed_expression = self.solve_lookup_type(arg)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1217, in solve_lookup_type\n    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1709, in names_to_path\n    raise FieldError(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 231,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T19:11:10Z",
+    "duration": "0.03",
+    "finished": "1680203470.03",
+    "exception": "'Settings' object has no attribute 'SITE_URL'",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 28, in my_job\n    'link': settings.SITE_URL,\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\conf\\__init__.py\", line 94, in __getattr__\n    val = getattr(_wrapped, name)\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 232,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T19:14:10Z",
+    "duration": "0.05",
+    "finished": "1680203650.05",
+    "exception": "daily_post.hmtl",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 25, in my_job\n    html_content = render_to_string(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\loader.py\", line 61, in render_to_string\n    template = get_template(template_name, using=using)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\loader.py\", line 19, in get_template\n    raise TemplateDoesNotExist(template_name, chain=chain)\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 233,
+  "fields": {
+    "job": "my_job",
+    "status": "Error!",
+    "run_time": "2023-03-30T19:16:10Z",
+    "duration": "0.05",
+    "finished": "1680203770.05",
+    "exception": "Invalid block tag on line 12: 'enfor', expected 'empty' or 'endfor'. Did you forget to register or load this tag?",
+    "traceback": "  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\apscheduler\\executors\\base.py\", line 125, in run_job\n    retval = job.func(*job.args, **job.kwargs)\n  File \"D:\\dev\\Site_0_2\\NewsPaper\\news\\management\\commands\\runapscheduler.py\", line 25, in my_job\n    html_content = render_to_string(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\loader.py\", line 61, in render_to_string\n    template = get_template(template_name, using=using)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\loader.py\", line 15, in get_template\n    return engine.get_template(template_name)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\backends\\django.py\", line 34, in get_template\n    return Template(self.engine.get_template(template_name), self)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\engine.py\", line 175, in get_template\n    template, origin = self.find_template(template_name)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\engine.py\", line 157, in find_template\n    template = loader.get_template(name, skip=skip)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\loaders\\cached.py\", line 57, in get_template\n    template = super().get_template(template_name, skip)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\loaders\\base.py\", line 28, in get_template\n    return Template(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\base.py\", line 154, in __init__\n    self.nodelist = self.compile_nodelist()\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\base.py\", line 200, in compile_nodelist\n    return parser.parse()\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\base.py\", line 513, in parse\n    raise self.error(token, e)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\base.py\", line 511, in parse\n    compiled_result = compile_func(self, token)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\defaulttags.py\", line 854, in do_for\n    nodelist_loop = parser.parse(\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\base.py\", line 507, in parse\n    self.invalid_block_tag(token, command, parse_until)\n  File \"C:\\Users\\MeRKaLyuT\\venv\\lib\\site-packages\\django\\template\\base.py\", line 558, in invalid_block_tag\n    raise self.error(\n"
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 234,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:18:10Z",
+    "duration": "1.57",
+    "finished": "1680203891.57",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 235,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:19:10Z",
+    "duration": "0.74",
+    "finished": "1680203950.74",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 236,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:20:10Z",
+    "duration": "0.66",
+    "finished": "1680204010.66",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 237,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:34:05Z",
+    "duration": "0.02",
+    "finished": "1680204845.02",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 238,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:35:05Z",
+    "duration": "0.02",
+    "finished": "1680204905.02",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 239,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:37:05Z",
+    "duration": "1.61",
+    "finished": "1680205026.61",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 240,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:38:05Z",
+    "duration": "1.03",
+    "finished": "1680205086.03",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 241,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:39:05Z",
+    "duration": "0.75",
+    "finished": "1680205145.75",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 242,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:40:05Z",
+    "duration": "0.77",
+    "finished": "1680205205.77",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 243,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:41:05Z",
+    "duration": "0.77",
+    "finished": "1680205265.77",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 244,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:42:05Z",
+    "duration": "1.82",
+    "finished": "1680205326.82",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 245,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:43:05Z",
+    "duration": "1.20",
+    "finished": "1680205386.20",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 246,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:44:05Z",
+    "duration": "0.75",
+    "finished": "1680205445.75",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 247,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:46:05Z",
+    "duration": "1.73",
+    "finished": "1680205566.73",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 248,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:47:05Z",
+    "duration": "2.21",
+    "finished": "1680205627.21",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 249,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:48:05Z",
+    "duration": "0.75",
+    "finished": "1680205685.75",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 250,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:49:05Z",
+    "duration": "0.73",
+    "finished": "1680205745.73",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 251,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:50:05Z",
+    "duration": "0.78",
+    "finished": "1680205805.78",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 252,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:51:05Z",
+    "duration": "0.75",
+    "finished": "1680205865.75",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 253,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:52:05Z",
+    "duration": "1.78",
+    "finished": "1680205926.78",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 254,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:54:10Z",
+    "duration": "1.70",
+    "finished": "1680206051.70",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 255,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:56:10Z",
+    "duration": "1.65",
+    "finished": "1680206171.65",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 256,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:57:10Z",
+    "duration": "0.81",
+    "finished": "1680206230.81",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 257,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:58:10Z",
+    "duration": "0.80",
+    "finished": "1680206290.80",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 258,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T19:59:10Z",
+    "duration": "0.75",
+    "finished": "1680206350.75",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 259,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T20:00:10Z",
+    "duration": "0.84",
+    "finished": "1680206410.84",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 260,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T20:01:10Z",
+    "duration": "0.75",
+    "finished": "1680206470.75",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 261,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T20:02:10Z",
+    "duration": "0.87",
+    "finished": "1680206530.87",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 262,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-03-30T20:06:00Z",
+    "duration": "1.73",
+    "finished": "1680206761.73",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 263,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-04-12T21:39:00Z",
+    "duration": "4.37",
+    "finished": "1681335544.37",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "django_apscheduler.djangojobexecution",
+  "pk": 264,
+  "fields": {
+    "job": "my_job",
+    "status": "Executed",
+    "run_time": "2023-04-12T21:44:00Z",
+    "duration": "2.05",
+    "finished": "1681335842.05",
+    "exception": null,
+    "traceback": null
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2023-03-25T17:21:58.527Z",
+    "user": [
+      "News"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "23",
+    "object_repr": "kiparenko06",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2023-03-25T17:22:21.590Z",
+    "user": [
+      "News"
+    ],
+    "content_type": [
+      "news",
+      "author"
+    ],
+    "object_id": "2",
+    "object_repr": "Author object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2023-03-25T19:12:28.038Z",
+    "user": [
+      "News"
+    ],
+    "content_type": [
+      "news",
+      "post"
+    ],
+    "object_id": "23",
+    "object_repr": "Путин Ушел С Поста: Случилось невероятное событие.",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"post category\", \"object\": \"PostCategory object (7)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2023-03-25T19:14:15.748Z",
+    "user": [
+      "News"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "22",
+    "object_repr": "merkalyut8",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2023-03-26T17:37:03.935Z",
+    "user": [
+      "News"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "25",
+    "object_repr": "marinushka87",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2023-03-26T17:58:44.569Z",
+    "user": [
+      "News"
+    ],
+    "content_type": [
+      "news",
+      "category"
+    ],
+    "object_id": "4",
+    "object_repr": "Музыка",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2023-03-28T18:41:42.720Z",
+    "user": [
+      "News"
+    ],
+    "content_type": [
+      "news",
+      "post"
+    ],
+    "object_id": "36",
+    "object_repr": "Wegw: я люблю мамуя люблю мамуя любл",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"post category\", \"object\": \"PostCategory object (16)\"}}, {\"added\": {\"name\": \"post category\", \"object\": \"PostCategory object (17)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2023-04-18T20:55:32.911Z",
+    "user": [
+      "News"
+    ],
+    "content_type": [
+      "news",
+      "post"
+    ],
+    "object_id": "23",
+    "object_repr": "Путин Ушел С Поста: Случилось невероятное событие.",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Text\"]}}]"
+  }
+}
+]

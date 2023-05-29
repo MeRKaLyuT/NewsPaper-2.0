@@ -13,7 +13,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 from pathlib import Path
 import redis
+import logging
 
+
+logger = logging.getLogger(__name__)
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -51,9 +54,11 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.yandex',
     # для периодичных задач | pip install django-apscheduler
     'django_apscheduler',
+    'django_dump_load_utf8',
 ]
 
 MIDDLEWARE = [
+    # Чем выше в списке, тем выше слой, а значит, и SecurityMiddleware должен быть как можно выше
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -61,7 +66,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware'
+    'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+
+
 ]
 
 ROOT_URLCONF = 'NewsPaper.urls'
@@ -104,10 +111,21 @@ AUTHENTICATION_BACKENDS = [
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': '48973306m.',
+        'HOST': 'Localhost',
+        'PORT': '5432',
     }
 }
 
@@ -199,3 +217,118 @@ CELERY_RESULT_BACKEND = f'redis://default:eTjtcrIxBKPGnOwQ5Cp3iwkVFM6r4bGb@redis
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': os.path.join(BASE_DIR, 'cache_files'),
+        'TIMEOUT':  30,
+    }
+}
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'style': '{',
+    'formatters': {
+        'debugsimple': {
+            'format': '%(levelname)s %(asctime)s %(message)s'
+        },
+        'warning': {
+          'format': '%(levelname)s %(asctime)s %(message)s %(pathname)s'
+        },
+        'errorandcrit': {
+            'format': '%(levelname)s %(asctime)s %(message)s %(pathname)s %(exc_info)s'
+        },
+        'info': {
+            'format': '%(levelname)s %(module)s %(asctime)s %(message)s'
+        },
+    },
+    'filters': {
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        },
+    },
+    'handlers': {
+
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'debugsimple',
+            'filters': ['require_debug_true'],
+        },
+        'InfoLog': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': 'general.log',
+            'formatter': 'info',
+            'filters': ['require_debug_false'],
+        },
+        'WarningLog': {
+            'level': 'WARNING',
+            'class': 'logging.StreamHandler',
+            'formatter': 'warning',
+            'filters': ['require_debug_true'],
+        },
+        'ErrorCriticalLogCon': {
+            'level': 'ERROR',
+            'class': 'logging.StreamHandler',
+            'formatter': 'errorandcrit',
+            'filters': ['require_debug_true'],
+        },
+        'ErrorCriticalLog': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'errors.log',
+            'formatter': 'errorandcrit'
+        },
+        'security': {
+            'class': 'logging.FileHandler',
+            'filename': 'security.log',
+            'formatter': 'info',
+        },
+        'mail_admins': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'formatter': 'warning',
+            'filters': ['require_debug_false'],
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['InfoLog', 'console', 'WarningLog', 'ErrorCriticalLogCon', ],
+            'propagate': True,
+            'level': 'DEBUG'
+        },
+        'django.request': {
+            'handlers': ['ErrorCriticalLog', 'mail_admins'],
+            'propagate': True,
+            'level': 'ERROR',
+        },
+        'django.server': {
+            'handlers': ['ErrorCriticalLog', 'mail_admins'],
+            'propagate': True,
+            'level': 'ERROR',
+        },
+        'django.template': {
+            'handlers': ['ErrorCriticalLog', ],
+            'propagate': True,
+            'level': 'ERROR',
+        },
+        'django.db.backends': {
+            'handlers': ['ErrorCriticalLog', ],
+            'propagate': True,
+            'level': 'ERROR',
+        },
+        'django.security': {
+            'handlers': ['security', ],
+            'propagate': True,
+            'level': 'DEBUG',
+        },
+
+    }
+}
