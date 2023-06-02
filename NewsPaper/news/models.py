@@ -1,4 +1,6 @@
 import datetime
+from django.utils.translation import gettext as _
+
 
 from django.db import models
 from django.core.validators import MinValueValidator
@@ -97,5 +99,8 @@ class Comment(models.Model):
 class Subscription(models.Model):
     user = models.ForeignKey(to=User, on_delete=models.CASCADE, related_name='subscriptions')
     category = models.ForeignKey(to='Category', on_delete=models.CASCADE, related_name='subscriptions')
+
+
+
 
 # Create your models here.
