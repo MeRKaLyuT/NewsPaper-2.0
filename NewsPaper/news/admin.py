@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Category, Post, Author, PostCategory, Subscription
+from .models import Category, Post, Author, PostCategory, Subscription, MyModel
+from modeltranslation.admin import TranslationAdmin
 
 
 def nullfy_rank(modeladmin, request, queryset):
@@ -15,7 +16,7 @@ class PostCategoryInLine(admin.TabularInline):
     extra = 3
 
 
-class PostAdmin(admin.ModelAdmin):
+class PostAdmin(TranslationAdmin):
     inlines = [PostCategoryInLine]
     # Отображение в консоли джанго ( показывает во вкладке "посты" информацию сразу в поле с названием поста, без захода
     # в него)
@@ -28,8 +29,17 @@ class PostAdmin(admin.ModelAdmin):
     actions = [nullfy_rank]
 
 
+class CategoryAdmin(TranslationAdmin):
+    model = Category
+
+
+class MyModelAdmin(TranslationAdmin):
+    model = MyModel
+
+
 admin.site.register(Category)
 admin.site.register(Post, PostAdmin)
 admin.site.register(Author)
 admin.site.register(Subscription)
+admin.site.register(MyModel)
 

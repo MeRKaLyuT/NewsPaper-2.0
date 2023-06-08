@@ -36,6 +36,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +55,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.yandex',
     # для периодичных задач | pip install django-apscheduler
     'django_apscheduler',
-    'django_dump_load_utf8',
+    # 'django_dump_load_utf8',
+
 ]
 
 MIDDLEWARE = [
@@ -68,6 +70,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'news.middleware.TimezoneMiddleware',
 ]
 
 ROOT_URLCONF = 'NewsPaper.urls'
@@ -111,22 +114,23 @@ AUTHENTICATION_BACKENDS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '48973306m.',
-        'HOST': 'Localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'PASSWORD': '48973306m.',
+#         'HOST': 'Localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
@@ -152,6 +156,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
 LANGUAGE_CODE = 'ru'
+
+LANGUAGES = [
+    ('en-us', 'English'),
+    ('ru', 'Русский')
+]
 
 TIME_ZONE = 'UTC'
 

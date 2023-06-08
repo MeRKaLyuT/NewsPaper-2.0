@@ -1,7 +1,10 @@
 {% extends 'flatpages/default.html' %}
+{% load i18n %}
 
 {% block content %}
 <h1>Delete post</h1>
+{{ string }}
+{% trans "Check out my new cool translation!" %}
 <hr>
 <form action="" method="post">
   {% csrf_token %}

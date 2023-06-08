@@ -1,6 +1,7 @@
 from django import forms
 from .models import Post, PostCategory
 from django.core.exceptions import ValidationError
+from django.utils.translation import gettext as _
 
 
 class PostForm(forms.ModelForm):
@@ -23,7 +24,7 @@ class PostForm(forms.ModelForm):
 
             if name == text:
                 raise ValidationError(
-                    "Описание товара не может быть идентично названию"
+                    _("Описание товара не может быть идентично названию")
                 )
 
             return cleaned_data

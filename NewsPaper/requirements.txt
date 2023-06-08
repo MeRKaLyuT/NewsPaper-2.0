@@ -1,0 +1,6 @@
+Django
+celery
+django-allauth
+django-apscheduler
+django-filter
+redis

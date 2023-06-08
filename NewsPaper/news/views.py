@@ -1,4 +1,4 @@
-from datetime import datetime
+import datetime
 from .models import *
 from news.filters import PostFilter
 from django.urls import reverse_lazy
@@ -9,13 +9,15 @@ from .forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.db.models import Exists, OuterRef
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views.decorators.csrf import csrf_protect
 from django.views import View
 from .tasks import hello, printer
 from django.http import HttpResponse
 from django.core.cache import cache
 from django.utils.translation import gettext as _
+from django.utils import timezone
+import pytz
 
 
 class NewsList(ListView):
@@ -35,7 +37,7 @@ class NewsList(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['filterset'] = self.filterset
-        context['time_now'] = datetime.utcnow()
+        context['time_now'] = datetime.datetime.utcnow()
         context['next_news'] = None
         return context
 
@@ -99,7 +101,7 @@ def subscribe(request, pk):
     category = Category.objects.get(id=pk)
     category.subscribers.add(user)
 
-    message = 'Вы успешно подписались на рассылку новостей категории'
+    message = _('Вы успешно подписались на рассылку новостей категории')
     return render(request, 'subscriptions.html', {'category': category, 'message': message})
 
 
@@ -112,6 +114,18 @@ class IndexView(View):
 
 class Index(View):
     def get(self, request):
-        string = _('Hello world')
+        current_time = timezone.now()
 
-        return HttpResponse(string)
+        models = MyModel.objects.all()
+        context = {
+            'models': models,
+            'current_time': timezone.now(),
+            'timezones': pytz.common_timezones
+
+        }
+
+        return HttpResponse(render(request, 'default.html', context))
+
+    def post(self, request):
+        request.session['django_timezone'] = request.POST['timezone']
+        return redirect('/')
